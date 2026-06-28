@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #f8f3e8;
+  --fg: #2a1c18;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background:
+    radial-gradient(circle at top, rgba(217, 119, 6, 0.09), transparent 35%),
+    linear-gradient(180deg, #fcfaf5 0%, #f8f3e8 100%);
+  color: var(--fg);
+  font-family: Inter, system-ui, sans-serif;
+}
+
+::selection {
+  background: rgba(217, 119, 6, 0.2);
+}
